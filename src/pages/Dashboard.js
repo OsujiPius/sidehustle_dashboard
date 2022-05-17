@@ -46,12 +46,16 @@ function Dashboard() {
         id="sidebar"
         style={{ background: "#28a745" }}
       >
-        <img
-          src={profile}
-          alt="cancel"
-          className="dashboard_sidebar-cancel"
+        <i
+          style={{
+            fontSize: "25px",
+            margin: "5px 0px 30px 0px",
+            cursor: "pointer",
+          }}
+          className="fas fa-times dashboard_sidebar-cancel"
           onClick={closeNav}
-        />
+        ></i>
+
         <h2 className="header">SideHustle</h2>
 
         <div
@@ -129,12 +133,11 @@ function Dashboard() {
       <div className="dashboard_main">
         <Container>
           <div className="dashboard_main-nav">
-            <img
-              src={menu}
-              alt="menu"
-              className="dashboard_main-nav-menu"
+            <i
+              className="fas fa-bars menu"
+              style={{ cursor: "pointer" }}
               onClick={() => openNav()}
-            />
+            ></i>
           </div>
         </Container>
         <div

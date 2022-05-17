@@ -36,7 +36,7 @@ function SignUp() {
     e.preventDefault();
     sessionStorage.setItem("userDetails", JSON.stringify({ ...form }));
 
-    toast.info(`Welcome to Admin Dashboard`);
+    toast.success(`Welcome to SideHustle`);
 
     setTimeout(() => {
       window.location = "/";
@@ -48,7 +48,7 @@ function SignUp() {
       <ToastContainer />
 
       <div>
-        <h1 style={{ color: "#105BAA" }}> Login</h1>
+        <h1 style={{ color: "#28a745", textAlign: "center" }}> Login</h1>
         <form onSubmit={submitHandler}>
           <input
             type="email"
@@ -66,18 +66,8 @@ function SignUp() {
             onChange={handleChange}
           />
 
-          <div style={{ display: "flex", alignItems: "flex-start" }}>
-            <input
-              type="checkbox"
-              style={{ width: "25px", margin: "-7px 7px 0 0" }}
-              id="readTerms"
-            />
-            <p>
-              I have read, understood and i agree to the terms and conditions
-            </p>
-          </div>
           <button
-            style={{ background: "#105BAA" }}
+            style={{ background: "#28a745" }}
             className={formValid ? "auth_signup-active" : "auth_signup-submit"}
             // type="submit"
             // id="actionBtn"

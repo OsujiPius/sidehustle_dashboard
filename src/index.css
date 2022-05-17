@@ -82,9 +82,25 @@ select:focus {
   justify-content: space-evenly;
 }
 
+.menu {
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  .menu {
+    display: block;
+    font-size: 28px;
+    margin: 10px;
+  }
+}
 @media screen and (max-width: 400px) {
   .chart {
     flex-direction: column;
     padding-right: 20px;
+  }
+
+  input,
+  button {
+    width: 370px !important;
+    margin: 10px 10px !important;
   }
 }
